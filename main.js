@@ -6,7 +6,6 @@ canvas.height = innerHeight;
 
 const TILE_SIZE = 90;
 const CHUNK_SIZE = 20;
-const MAP_TILE_SIZE = 1;
 
 const SPEED = 5;
 const RUN_SPEED = 2;
@@ -70,10 +69,6 @@ class Chunk {
             for (let y = 0; y < size; y++)
                 matrix.push({ x: x + chunkX, y: y + chunkY, color: getColorTile(x + chunkX, y + chunkY).color, img: getColorTile(x + chunkX, y + chunkY).img })
 
-
-        // for(let x = -size; x < size; x++)
-        // for(let y = -size; y < size; y++)u
-
         return new Chunk(chunkX, chunkY, matrix);
     }
 
@@ -88,8 +83,6 @@ class Chunk {
         const realChunkSize = CHUNK_SIZE * TILE_SIZE;
         const chunkX = x * realChunkSize / CHUNK_SIZE;
         const chunkY = y * realChunkSize / CHUNK_SIZE;
-
-        // console.log(chunkX, x);
 
         const gameX = world.x;
         const gameY = world.y;
