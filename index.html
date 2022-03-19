@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um simples 'jogo' para testar a geração de mundo procedural">
+    <style>
+        *{
+            margin: 0;
+            /* overflow: hidden; */
+            pointer-events: none;
+            color: #eee;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+        }
+
+        *::selection{
+            background: none;
+        }
+
+        .seed{
+            position: absolute;
+            top: 93%;
+            left: 1%;
+            width: auto;
+        }
+
+        canvas{
+            background-color: #191919;
+            position: fixed;
+        }
+    </style>
+    <title>Game</title>
+</head>
+<body>
+    <canvas id="game">esse jogo não e compativel com o seu navegador!</canvas>
+    <h1 class="seed">SEED: <span id="seed">12345</span></h1>
+    
+    <script src='noise.js'></script>
+    <script src="main.js"></script>
+</body>
+</html>
