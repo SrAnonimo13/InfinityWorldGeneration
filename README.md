@@ -1,6 +1,15 @@
 # Simple world generation
 
-uma simples geração de mundo infinito
+Randomly Generated World
 
-<img src="https://github.com/SrAnonimo13/InfinityWorldGeneration/blob/main/github/reference1.jpg"></img>
-<img src="https://github.com/SrAnonimo13/InfinityWorldGeneration/blob/main/github/reference2.jpg"></img>
+## See it working on:
+https://the-island-testing.netlify.app/
+
+## To move around, use:
+ - <code>W</code> to go up
+ - <code>A</code> to go left
+ - <code>D</code> to go right
+ - <code>S</code> to go down
+
+![Reference Img1](.github/reference1.jpg "Reference 1")
+![Reference Img2](.github/reference2.jpg "Reference 2")
